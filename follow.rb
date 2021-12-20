@@ -42,6 +42,7 @@ f.each_line do |line|
     reset = e.rate_limit.reset_in + 3
     puts("Too many requests... sleeping for #{reset} seconds...")
     reset.times { |i| print("."); sleep(1)}
+    print("\n")
     retry
   rescue Exception => e
     puts("Failed to follow #{name} because of #{e}")
