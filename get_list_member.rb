@@ -2,6 +2,8 @@
 
 require 'twitter'
 
+## Get these here: https://developer.twitter.com/en/portal/dashboard
+
 # App Access Tokens
 key = ''
 secretkey = ''
